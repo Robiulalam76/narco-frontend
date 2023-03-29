@@ -8,7 +8,7 @@ const Banner = () => {
         <section>
             <div style={{ backgroundImage: `url(${banner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                 className="h-[660px] w-full mx-auto" >
-                <div className='max-w-[1440px] pt-44 px-4 mx-auto '>
+                <div className='max-w-[1440px] pt-16 md:pt-44 px-4 mx-auto '>
                     <div className='flex flex-col md:flex-row items-center md:justify-between'>
                         <img src={img1} alt="" />
                         <div className='max-w-[660px]'>
