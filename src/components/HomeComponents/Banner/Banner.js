@@ -7,7 +7,8 @@ import '../../../fonts/ArbFONTS-The-Sans-Plain.otf'
 const Banner = () => {
     return (
         <section id='home' >
-            <Parallax blur={2} bgImage={banner} bgImageAlt="banner_image" strength={600}>
+            <Parallax blur={2} bgImage={banner} bgImageAlt="banner_image" strength={600}
+                style={{ backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                 <div
                     className="relative overflow-hidden h-[660px] w-full mx-auto" >
                     <div className='max-w-[1440px] pt-16 md:pt-44 px-4 mx-auto '>

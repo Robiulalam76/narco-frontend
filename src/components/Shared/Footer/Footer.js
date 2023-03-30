@@ -8,7 +8,7 @@ import banner from '../../../assets/images/footer-images/img1.png'
 
 const Footer = () => {
     return (
-        <section className='max-w-[1440px] mx-auto px-4 mt-32 pb-6' id='contact' >
+        <section className='max-w-[1440px] mx-auto px-4 mt-32' id='contact' >
             <div style={{ backgroundImage: `url(${banner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                 className='w-full h-[700px] rounded-t-[50px] relative overflow-hidden' >
 
@@ -27,9 +27,9 @@ const Footer = () => {
                                 <div className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
                                     <img className='w-8 h-8' src={instagram} alt="" />
                                 </div>
-                                <div className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
+                                <a target="_blank" href='https://wa.me/8801751299132' className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
                                     <img className='w-8 h-8' src={whatsup} alt="" />
-                                </div>
+                                </a>
                             </div>
                         </div>
 
@@ -50,8 +50,8 @@ const Footer = () => {
                 </div>
 
                 <a target="_blank" href='https://wa.me/8801751299132'
-                    className='fixed bottom-6 left-6 w-28 h-28 rounded-full flex justify-center items-center bg-primary hover:bg-darkPrimary duration-300 shadow-xl shadow-gray-500'>
-                    <img className='w-16 h-16' src={whatsup} alt="" />
+                    className='fixed bottom-6 left-6 z-50 w-20 h-20 rounded-full flex justify-center items-center bg-primary hover:bg-darkPrimary hover:scale-125 duration-300 shadow shadow-secondary'>
+                    <img className='w-12 h-12' src={whatsup} alt="" />
                 </a>
             </div>
         </section>

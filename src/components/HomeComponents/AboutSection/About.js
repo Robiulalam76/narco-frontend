@@ -7,7 +7,7 @@ const About = () => {
     // console.log(items);
     return (
         <section id='about'>
-            <div className='grid md:grid-cols-2 gap-12 mt-12 cursor-pointer'>
+            <div className='grid md:grid-cols-2 gap-6 md:gap-12 mt-12 cursor-pointer'>
                 {
                     firstData?.map((item, i) => (
                         <div key={i} className='flex flex-col-reverse md:flex-row items-center md:justify-end gap-8 p-6 bg-secondary h-fit md:h-44 rounded-3xl'>
@@ -20,7 +20,7 @@ const About = () => {
                     ))
                 }
             </div>
-            <div className='grid md:grid-cols-2 gap-12 mt-10 cursor-pointer'>
+            <div className='grid md:grid-cols-2 gap-6 md:gap-12 mt-10 cursor-pointer'>
                 {
                     secondData?.map((item, i) => (
                         <div key={i} className='flex flex-col-reverse md:flex-row items-center md:justify-end gap-8 p-6 bg-white shadow-sm h-fit md:h-44 rounded-3xl'>
