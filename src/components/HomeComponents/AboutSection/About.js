@@ -1,5 +1,5 @@
 import React from 'react';
-import { firstIems, secondIems } from '../../../../utils/homeData/about';
+import { firstIems, secondIems } from '../../../utils/homeData/about';
 
 const About = () => {
     const firstData = firstIems;

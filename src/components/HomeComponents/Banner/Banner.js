@@ -1,7 +1,7 @@
 import React from 'react';
-import banner from '../../../../assets/images/banner-images/banner.png'
-import img1 from '../../../../assets/images/banner-images/img1.png'
-import '../../../../fonts/ArbFONTS-The-Sans-Plain.otf'
+import banner from '../../../assets/images/banner-images/banner.png'
+import img1 from '../../../assets/images/banner-images/img1.png'
+import '../../../fonts/ArbFONTS-The-Sans-Plain.otf'
 
 const Banner = () => {
     return (

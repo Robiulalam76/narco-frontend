@@ -1,7 +1,7 @@
 import React from 'react';
-import { companyImages } from '../../../../utils/homeData/companiesData';
-import leftArrow from '../../../../assets/icons/leftArrow.png'
-import rightArrow from '../../../../assets/icons/rightArrow.png'
+import { companyImages } from '../../../utils/homeData/companiesData';
+import leftArrow from '../../../assets/icons/leftArrow.png'
+import rightArrow from '../../../assets/icons/rightArrow.png'
 
 const Companies = () => {
     const images = companyImages;

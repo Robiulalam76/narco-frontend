@@ -1,9 +1,10 @@
 import React from 'react';
-import About from '../../components/Shared/HomeComponents/AboutSection/About';
-import Banner from '../../components/Shared/HomeComponents/Banner/Banner';
-import BigButton from '../../components/Shared/HomeComponents/BgButtonSection/BigButton';
-import Companies from '../../components/Shared/HomeComponents/CompaniesSection/Companies';
-import Service from '../../components/Shared/HomeComponents/ServicesSection/Service';
+import About from '../../components/HomeComponents/AboutSection/About';
+import Banner from '../../components/HomeComponents/Banner/Banner';
+import BigButton from '../../components/HomeComponents/BgButtonSection/BigButton';
+import Companies from '../../components/HomeComponents/CompaniesSection/Companies';
+import OrderForm from '../../components/HomeComponents/OrderForm/OrderForm';
+import Service from '../../components/HomeComponents/ServicesSection/Service';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
                 <Companies />
                 <BigButton />
                 <Service />
+                <OrderForm />
             </div>
         </main>
     );

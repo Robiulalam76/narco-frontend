@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import eye from "../../../../assets/icons/big-button-icons/eye.png"
-import leftArrow from "../../../../assets/icons/big-button-icons/leftArrow.png"
-import pdf from '../../../../utils/pdf/narco.pdf'
+import eye from "../../../assets/icons/big-button-icons/eye.png"
+import leftArrow from "../../../assets/icons/big-button-icons/leftArrow.png"
+import pdf from '../../../utils/pdf/narco.pdf'
 
 const BigButton = () => {
     return (

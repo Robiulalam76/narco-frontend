@@ -1,5 +1,5 @@
 import React from 'react';
-import { serviceItems } from '../../../../utils/homeData/serviceData';
+import { serviceItems } from '../../../utils/homeData/serviceData';
 import ServiceCard from './ServiceCard';
 
 const Service = () => {
