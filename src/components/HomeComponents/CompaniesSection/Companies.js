@@ -6,7 +6,7 @@ import rightArrow from '../../../assets/icons/rightArrow.png'
 const Companies = () => {
     const images = companyImages;
     return (
-        <section className='mt-40'>
+        <section className='mt-40' id='company' >
             <div className='flex flex-col-reverse md:flex-row items-center justify-center md:justify-between md:items-center gap-x-4 gap-y-12'>
                 <div className='flex justify-between items-center gap-4'>
                     <button className='min-w-[48px] h-12 flex justify-center items-center hover:bg-primary rounded-full'>

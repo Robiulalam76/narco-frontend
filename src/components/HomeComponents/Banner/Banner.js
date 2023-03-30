@@ -5,7 +5,7 @@ import '../../../fonts/ArbFONTS-The-Sans-Plain.otf'
 
 const Banner = () => {
     return (
-        <section>
+        <section id='home' >
             <div style={{ backgroundImage: `url(${banner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                 className="h-[660px] w-full mx-auto" >
                 <div className='max-w-[1440px] pt-16 md:pt-44 px-4 mx-auto '>

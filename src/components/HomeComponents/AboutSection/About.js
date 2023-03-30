@@ -6,7 +6,7 @@ const About = () => {
     const secondData = secondIems;
     // console.log(items);
     return (
-        <section>
+        <section id='about'>
             <div className='grid md:grid-cols-2 gap-12 mt-12 cursor-pointer'>
                 {
                     firstData?.map((item, i) => (

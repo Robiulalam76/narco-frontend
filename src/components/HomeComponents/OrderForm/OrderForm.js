@@ -34,7 +34,7 @@ const OrderForm = () => {
             });
     }
     return (
-        <section className='mt-32 pb-16'>
+        <section className='mt-32 pb-16' id='order' >
             <form ref={form} onSubmit={handleSubmit} >
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                     <input className='w-full h-16 px-4 text-right rounded-3xl border-4 border-secondary focus:border-primary focus:outline-none'

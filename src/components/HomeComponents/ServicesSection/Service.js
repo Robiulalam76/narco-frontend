@@ -5,7 +5,7 @@ import ServiceCard from './ServiceCard';
 const Service = () => {
     const services = serviceItems;
     return (
-        <section className='mt-28'>
+        <section className='mt-28' id='service' >
             <div>
                 <h1 className='text-secondary font-bold text-center text-2xl'>بعض الخدمات</h1>
                 <h1 className='text-secondary font-bold text-center text-6xl md:text-9xl mt-3'>خدماتنا</h1>
