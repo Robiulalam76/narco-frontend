@@ -26,10 +26,10 @@ const Companies = () => {
                     </button> */}
                     <Swiper
                         slidesPerView={8}
-                        // grid={{
-                        //     rows: 2,
-                        // }}
-                        // spaceBetween={30}
+                        grid={{
+                            rows: 2,
+                        }}
+                        spaceBetween={30}
                         pagination={{
                             clickable: true,
                         }}
