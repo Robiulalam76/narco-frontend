@@ -6,7 +6,7 @@ import pdf from '../../../utils/pdf/narco.pdf'
 
 const BigButton = () => {
     return (
-        <Link target="_blank" to={pdf} className='h-96 md:h-[600px] w-full grid md:grid-cols-2 items-center gap-4 p-6 md:p-20 rounded-3xl mt-40 bg-primary hover:bg-darkPrimary duration-500 cursor-pointer'>
+        <Link target="_blank" to="https://drive.google.com/file/d/1x_p8CmHgoBtKfcMPEpjeXtUfgIgkZpzZ/view?usp=sharing" className='h-96 md:h-[600px] w-full grid md:grid-cols-2 items-center gap-4 p-6 md:p-20 rounded-3xl mt-40 bg-primary hover:bg-darkPrimary duration-500 cursor-pointer'>
             <div className='w-full h-full flex justify-center items-center'>
                 <img className='w-40 md:w-80' src={eye} alt="" />
             </div>
