@@ -49,11 +49,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-
-
                 <a target="_blank" href='https://wa.me/8801751299132'
-                    className='fixed bottom-6 left-6 w-32 h-32 rounded-full flex justify-center items-center bg-primary hover:bg-darkPrimary duration-300 shadow-xl shadow-gray-500'>
-                    <img className='w-20 h-20' src={whatsup} alt="" />
+                    className='fixed bottom-6 left-6 w-28 h-28 rounded-full flex justify-center items-center bg-primary hover:bg-darkPrimary duration-300 shadow-xl shadow-gray-500'>
+                    <img className='w-16 h-16' src={whatsup} alt="" />
                 </a>
             </div>
         </section>
