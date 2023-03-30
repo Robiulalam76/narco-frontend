@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import smallDownArrow from '../../../assets/icons/smallDownArrow.png'
 import send from '../../../assets/icons/send.png'
 
@@ -9,6 +10,7 @@ const OrderForm = () => {
     const [requestTypeData, setRequestTypeData] = useState('')
     const [durationData, setDurationData] = useState('')
     const [openDropdown, setOpenDropdown] = useState(0)
+    const form = useRef();
 
     const handleRequestType = (data) => {
         setRequestTypeData(data);
@@ -22,10 +24,18 @@ const OrderForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(e.target);
+
+        emailjs.sendForm('service_bsaaisv', 'template_7z24f8z', form.current, '9dKX9Y2VsLt6aYN6Y')
+            .then((result) => {
+                alert('Message Send Successfully')
+                e.target.reset()
+            }, (error) => {
+                alert('Message Send UnSuccessfully')
+            });
     }
     return (
         <section className='mt-32 pb-16'>
-            <form onSubmit={handleSubmit} >
+            <form ref={form} onSubmit={handleSubmit} >
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                     <input className='w-full h-16 px-4 text-right rounded-3xl border-4 border-secondary focus:border-primary focus:outline-none'
                         type="number" name='number' placeholder='رقم الجوال' required />
