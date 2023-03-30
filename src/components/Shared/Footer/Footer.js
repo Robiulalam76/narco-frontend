@@ -8,7 +8,7 @@ import banner from '../../../assets/images/footer-images/img1.png'
 
 const Footer = () => {
     return (
-        <section className='max-w-[1440px] mx-auto px-4 mt-32' id='contact' >
+        <section className='relative max-w-[1440px] mx-auto px-4 mt-32' id='contact' >
             <div style={{ backgroundImage: `url(${banner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                 className='w-full h-[700px] rounded-t-[50px] relative overflow-hidden' >
 

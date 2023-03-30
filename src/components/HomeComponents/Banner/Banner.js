@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
+import { Background, Parallax } from 'react-parallax';
 import banner from '../../../assets/images/banner-images/banner.png'
 import img1 from '../../../assets/images/banner-images/img1.png'
 import '../../../fonts/ArbFONTS-The-Sans-Plain.otf'
@@ -7,8 +7,10 @@ import '../../../fonts/ArbFONTS-The-Sans-Plain.otf'
 const Banner = () => {
     return (
         <section id='home' >
-            <Parallax blur={2} bgImage={banner} bgImageAlt="banner_image" strength={600}
-                style={{ backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+            <Parallax strength={600}>
+                <Background className="h-[660px] min-w-[100vw]">
+                    <img className='w-full h-full object-cover' src={banner} alt="fill murray" />
+                </Background>
                 <div
                     className="relative overflow-hidden h-[660px] w-full mx-auto" >
                     <div className='max-w-[1440px] pt-16 md:pt-44 px-4 mx-auto '>

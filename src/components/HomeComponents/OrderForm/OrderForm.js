@@ -55,7 +55,7 @@ const OrderForm = () => {
                                 type="text" name='request_Type' defaultValue={requestTypeData} readOnly placeholder='نوع الطلب' />
                         </div>
                         {
-                            openDropdown === 1 && <div className='absolute z-50 grid grid-cols-1 h-fit w-full border-x-4 border-b-4 border-secondary rounded-ee-3xl rounded-b-3xl bg-white'>
+                            openDropdown === 1 && <div className='absolute z-50 grid grid-cols-1 h-fit w-full border-x-4 border-b-4 border-secondary rounded-ee-3xl rounded-b-3xl bg-white max-h-56 overflow-y-auto'>
                                 {
                                     types?.map((type, i) => (
                                         <h1 onClick={() => handleRequestType(type)} key={i}
@@ -81,7 +81,7 @@ const OrderForm = () => {
                                 type="text" name='contract_duration' defaultValue={durationData} readOnly placeholder='مدة العقد' />
                         </div>
                         {
-                            openDropdown === 2 && <div className='absolute z-40 grid grid-cols-1 h-fit w-full border-x-4 border-b-4 border-secondary rounded-ee-3xl rounded-b-3xl bg-white'>
+                            openDropdown === 2 && <div className='absolute z-40 grid grid-cols-1 h-fit w-full border-x-4 border-b-4 border-secondary rounded-ee-3xl rounded-b-3xl bg-white max-h-56 overflow-y-auto'>
                                 {
                                     durations?.map((d, i) => (
                                         <h1 onClick={() => handleRequestDuration(d)} key={i}

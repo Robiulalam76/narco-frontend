@@ -5,7 +5,7 @@ import Navber from '../components/Shared/Navber/Navber';
 
 const Main = () => {
     return (
-        <main className='bg-[#EFF7F4]'>
+        <main className='bg-[#EFF7F4] relative'>
             <Navber />
             <Outlet />
             <Footer />
