@@ -13,7 +13,7 @@ const Banner = () => {
                     <img className='w-full h-full object-cover' src={banner} alt="fill murray" />
                 </Background>
                 <div
-                    className="relative overflow-hidden h-[660px] w-full mx-auto" >
+                    className="relative overflow-hidden h-[580px] w-full mx-auto backdrop-brightness-50" >
                     <div className='max-w-[1440px] pt-16 md:pt-44 px-4 mx-auto '>
                         <div className='flex flex-col md:flex-row items-center md:justify-between'>
                             <img src={img1} alt="" />

@@ -1,9 +1,9 @@
-import img1 from '../../assets/images/service-images/img1.png'
-import img2 from '../../assets/images/service-images/img2.png'
-import img3 from '../../assets/images/service-images/img3.png'
-import img4 from '../../assets/images/service-images/img4.png'
-import img5 from '../../assets/images/service-images/img5.png'
-import img6 from '../../assets/images/service-images/img6.png'
+import img1 from '../../assets/images/service-images/1.jpg'
+import img2 from '../../assets/images/service-images/2.jpg'
+import img3 from '../../assets/images/service-images/3.jpg'
+import img4 from '../../assets/images/service-images/4.jpg'
+import img5 from '../../assets/images/service-images/5.jpg'
+import img6 from '../../assets/images/service-images/6.jpg'
 
 export const serviceItems = [
     {
