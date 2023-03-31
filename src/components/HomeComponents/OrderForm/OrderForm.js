@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import smallDownArrow from '../../../assets/icons/smallDownArrow.png'
 import send from '../../../assets/icons/send.png'
+import { toast } from 'react-hot-toast';
 
 const types = ["استقدام خارجي", "استقطاب داخلي"]
 const durations = ["ستة أشهر-", "سنة-", "سنتين-", "غير ذلك-"]
@@ -23,14 +24,14 @@ const OrderForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(e.target);
+        // console.log(e.target);
 
         emailjs.sendForm('service_bsaaisv', 'template_7z24f8z', form.current, '9dKX9Y2VsLt6aYN6Y')
             .then((result) => {
-                alert('Message Send Successfully')
+                toast.success('تم إرسال الرسالة بنجاح!')
                 e.target.reset()
             }, (error) => {
-                alert('Message Send UnSuccessfully')
+                toast.error('فشل ارسال الرسالة!')
             });
     }
     return (

@@ -9,10 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <section data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="bottom-bottom"
-            className='relative mx-auto mt-32' id='contact' >
+        <section className='relative mx-auto mt-32' id='contact' >
             <div style={{ backgroundImage: `url(${banner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                 className='w-full h-[700px] flex justify-center rounded-t-[50px] relative overflow-hidden' >
 

@@ -9,6 +9,10 @@
     url("./fonts/ArbFONTS-The-Sans-Plain.otf") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
