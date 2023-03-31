@@ -17,8 +17,8 @@ const Footer = () => {
 
                 <div className='flex flex-col justify-center items-center w-full max-w-[1440px] h-[700px] absolute top-0 z-50 p-4 md:p-10 mt-8'>
                     <div className='grid md:grid-cols-2 gap-4 w-full max-w-[1440px] mx-auto'>
-                        <div className='flex flex-col items-center md:items-end gap-4 w-full h-full'>
-                            <Link target="_blank" to="https://maps.app.goo.gl/HfjnaW6pZPmU5i2N9?g_st=ic" className='w-44 h-16 mx-auto md:mr-0 flex justify-around items-center bg-white hover:bg-gray-200 rounded-2xl'>
+                        <div className='flex flex-col items-center md:items-start gap-4 w-full h-full'>
+                            <Link target="_blank" to="https://maps.app.goo.gl/HfjnaW6pZPmU5i2N9?g_st=ic" className='w-44 h-16 mx-auto md:ml-0 flex justify-around items-center bg-white hover:bg-gray-200 rounded-2xl'>
                                 <span className='text-primary font-bold text-xl'>الموقع</span>
                                 <img className='w-6' src={location} alt="" />
                             </Link>
