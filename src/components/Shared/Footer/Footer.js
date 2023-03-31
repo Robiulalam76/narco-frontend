@@ -9,14 +9,17 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <section className='relative mx-auto mt-32' id='contact' >
+        <section data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="bottom-bottom"
+            className='relative mx-auto mt-32' id='contact' >
             <div style={{ backgroundImage: `url(${banner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
-                className='w-full h-[700px] rounded-t-[50px] relative overflow-hidden' >
+                className='w-full h-[700px] flex justify-center rounded-t-[50px] relative overflow-hidden' >
 
                 <div className="absolute top-0 w-full h-[700px] bg-secondary bg-opacity-75"></div>
 
                 <div className='flex flex-col justify-center items-center w-full max-w-[1440px] h-[700px] absolute top-0 z-50 p-4 md:p-10 mt-8'>
-                    <div className='grid md:grid-cols-2 gap-4 w-full'>
+                    <div className='grid md:grid-cols-2 gap-4 w-full max-w-[1440px] mx-auto'>
                         <div className='flex flex-col items-center md:items-end gap-4 w-full h-full'>
                             <Link target="_blank" to="https://maps.app.goo.gl/HfjnaW6pZPmU5i2N9?g_st=ic" className='w-44 h-16 mx-auto md:mr-0 flex justify-around items-center bg-white hover:bg-gray-200 rounded-2xl'>
                                 <span className='text-primary font-bold text-xl'>الموقع</span>
@@ -30,7 +33,7 @@ const Footer = () => {
                                 <div className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
                                     <img className='w-8 h-8' src={instagram} alt="" />
                                 </div>
-                                <a target="_blank" href='https://wa.me/8801751299132' className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
+                                <a target="_blank" href='https://wa.me/9660569088881' className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
                                     <img className='w-8 h-8' src={whatsup} alt="" />
                                 </a>
                             </div>
@@ -40,10 +43,11 @@ const Footer = () => {
                             <h1 className='text-5xl font-bold text-white text-center md:text-right'>تواصل معنّا</h1>
                             <div className='flex flex-col items-center md:items-end gap-2 w-full h-full text-center md:text-right text-white'>
                                 <Link target="_blank" to="mailto:info@narco.com?body=Please Enter Your Message"
-                                    className='hover:text-orange-200'>info@narco.com: الإيميل</Link>
+                                    className='hover:text-orange-200'>info@narco.com: الايميل</Link>
                                 <Link target="_blank" to="https://maps.app.goo.gl/HfjnaW6pZPmU5i2N9?g_st=ic"
-                                    className='hover:text-orange-200'>A23, Ave 14 street, Saudi Arabia Riyadh 23456: العنوان</Link>
-                                <Link to="tel:+ 0558854275" className='hover:text-orange-200'>الجوال: 0558854275</Link>
+                                    className='hover:text-orange-200'>Musa Ibn Nusair St, Al Olaya
+                                    Riyadh, Saudi Arabia 11432: العنوان</Link>
+                                <Link to="tel:+ 0569088881" className='hover:text-orange-200'>الجوال: 0569088881</Link>
                             </div>
                         </div>
                     </div>

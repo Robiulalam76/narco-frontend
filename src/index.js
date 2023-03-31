@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <a target="_blank" href='https://wa.me/8801751299132'
+    <a target="_blank" href='https://wa.me/9660569088881'
       className='fixed bottom-6 left-6 z-50 w-20 h-20 rounded-full flex justify-center items-center bg-primary hover:bg-darkPrimary border-[3px] border-white hover:scale-125 duration-300 shadow-secondary'>
       <img className='w-10 h-10' src={whatsup} alt="" />
     </a>

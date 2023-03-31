@@ -11,9 +11,11 @@ const Service = () => {
                 <h1 className='text-secondary font-bold text-center text-6xl md:text-9xl mt-3'>خدماتنا</h1>
             </div>
 
-            <div className='grid md:grid-cols-2 gap-6 md:gap-12 mt-9'>
+            <div data-aos="zoom-in-down" data-aos-duration="1000" className='grid md:grid-cols-2 gap-6 md:gap-12 mt-9'>
                 {
-                    services?.map((service, i) => <ServiceCard key={i} service={service} />)
+                    services?.map((service, i) => <ServiceCard data-aos="fade-right"
+                        data-aos-duration="1000"
+                        key={i} service={service} />)
                 }
             </div>
         </section>
