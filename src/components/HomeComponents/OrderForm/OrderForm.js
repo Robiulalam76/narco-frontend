@@ -26,7 +26,7 @@ const OrderForm = () => {
         e.preventDefault()
         // console.log(form.current);
 
-        emailjs.sendForm('service_h6u0Iwn', 'template_imuqw99', form.current, 'LmSj8g94zKPDM20kr')
+        emailjs.sendForm('service_h6u0lwn', 'template_imuqw99', form.current, 'LmSj8g94zKPDM20kr')
             .then((result) => {
                 toast.success('تم إرسال الرسالة بنجاح!')
                 e.target.reset()
@@ -34,14 +34,16 @@ const OrderForm = () => {
                 console.log(error);
                 toast.error('فشل ارسال الرسالة!')
             });
-        // emailjs.sendForm('service_bsaaisv', 'template_7z24f8z', form.current, '9dKX9Y2VsLt6aYN6Y')
-        //     .then((result) => {
-        //         toast.success('تم إرسال الرسالة بنجاح!')
-        //         e.target.reset()
-        //     }, (error) => {
-        //         console.log(error);
-        //         toast.error('فشل ارسال الرسالة!')
-        //     });
+
+        // ------------------------
+        emailjs.sendForm('service_bsaaisv', 'template_7z24f8z', form.current, '9dKX9Y2VsLt6aYN6Y')
+            .then((result) => {
+                // toast.success('تم إرسال الرسالة بنجاح!')
+                // e.target.reset()
+            }, (error) => {
+                // console.log(error);
+                // toast.error('فشل ارسال الرسالة!')
+            });
     }
     return (
         <section
