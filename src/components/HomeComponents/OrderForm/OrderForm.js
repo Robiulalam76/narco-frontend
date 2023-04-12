@@ -24,24 +24,30 @@ const OrderForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // console.log(e.target);
+        // console.log(form.current);
 
-        emailjs.sendForm('service_bsaaisv', 'template_7z24f8z', form.current, '9dKX9Y2VsLt6aYN6Y')
+        emailjs.sendForm('service_h6u0Iwn', 'template_imuqw99', form.current, 'LmSj8g94zKPDM20kr')
             .then((result) => {
                 toast.success('تم إرسال الرسالة بنجاح!')
                 e.target.reset()
             }, (error) => {
+                console.log(error);
                 toast.error('فشل ارسال الرسالة!')
             });
+        // emailjs.sendForm('service_bsaaisv', 'template_7z24f8z', form.current, '9dKX9Y2VsLt6aYN6Y')
+        //     .then((result) => {
+        //         toast.success('تم إرسال الرسالة بنجاح!')
+        //         e.target.reset()
+        //     }, (error) => {
+        //         console.log(error);
+        //         toast.error('فشل ارسال الرسالة!')
+        //     });
     }
     return (
         <section
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="bottom-bottom"
             className='mt-32 pb-16' id='order' >
             <form ref={form} onSubmit={handleSubmit} >
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-4 primaryFont'>
                     <input className='w-full h-16 px-4 text-right rounded-3xl border-4 border-secondary focus:border-primary focus:outline-none'
                         type="number" name='number' placeholder='رقم الجوال' required />
 
@@ -49,7 +55,7 @@ const OrderForm = () => {
                         type="text" name='name' placeholder='الاسم' required />
 
                     <input className='w-full h-16 px-4 text-right rounded-3xl border-4 border-secondary focus:border-primary focus:outline-none'
-                        type="number" name='numberCount' placeholder='عدد العماله' />
+                        type="number" name='number_of_workers' placeholder='عدد العماله' />
 
                     <div className='relative'>
                         <div onClick={() => setOpenDropdown(openDropdown === 1 ? 0 : 1)}
@@ -57,7 +63,7 @@ const OrderForm = () => {
                     ${openDropdown === 1 ? 'rounded-t-3xl' : 'rounded-3xl'}`}>
                             <img className='w-5' src={smallDownArrow} alt="" />
                             <input className='cursor-pointer w-full h-full px-4 text-right rounded-3xl border-4 border-none focus:border-none focus:outline-none'
-                                type="text" name='request_Type' defaultValue={requestTypeData} readOnly placeholder='نوع الطلب' />
+                                type="text" name='type_of_request' defaultValue={requestTypeData} readOnly placeholder='نوع الطلب' />
                         </div>
                         {
                             openDropdown === 1 && <div className='absolute z-50 grid grid-cols-1 h-fit w-full border-x-4 border-b-4 border-secondary rounded-ee-3xl rounded-b-3xl bg-white max-h-56 overflow-y-auto'>
@@ -74,7 +80,7 @@ const OrderForm = () => {
                     </div>
 
                     <input className='md:col-span-2 w-full h-16 px-4 text-right rounded-3xl border-4 border-secondary focus:border-primary focus:outline-none'
-                        type="text" name='details' placeholder='المهن المطلوبة و الجنسية' />
+                        type="text" name='professions_and_nationality' placeholder='المهن المطلوبة و الجنسية' />
 
 
                     <div className='relative'>
@@ -100,12 +106,12 @@ const OrderForm = () => {
                     </div>
 
                     <input className='w-full h-16 px-4 text-right rounded-3xl border-4 border-secondary focus:border-primary focus:outline-none'
-                        type="number" name='number_hours' placeholder='عدد ساعات العمل اليومية' />
+                        type="number" name='daily_working_hours' placeholder='عدد ساعات العمل اليومية' />
                 </div>
 
 
                 <button type='submit' className='flex justify-around items-center w-60 h-20 bg-primary hover:bg-darkPrimary text-white font-bold text-xl mx-auto rounded-3xl mt-8'>
-                    <span>إرسال الطلب</span>
+                    <span className='primaryFont'>إرسال الطلب</span>
                     <img className='w-6' src={send} alt="" />
                 </button>
 

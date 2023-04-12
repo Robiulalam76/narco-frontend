@@ -60,8 +60,8 @@ const Companies = () => {
                     </button> */}
                 {/* </div> */}
                 <div className='flex flex-col items-center justify-center md:items-end gap-4'>
-                    <span className='text-primary text-xl font-bold'>عملاء</span>
-                    <h1 className='text-primary text-5xl font-bold'>عملائنا</h1>
+                    <span className='text-primary text-xl font-bold primaryFont'>عملاء</span>
+                    <h1 className='text-primary text-5xl font-bold primaryFont'>عملائنا</h1>
                 </div>
             </div>
         </section>

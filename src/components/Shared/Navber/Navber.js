@@ -23,19 +23,19 @@ const Navber = () => {
 
                 <div className='flex justify-between items-center gap-12'>
                     <a href='#contact' className='hidden lg:block'>
-                        <p className='text-black hover:text-[#51B591] font-semibold'>اتصل بنا</p>
+                        <p className='text-black hover:text-[#51B591] font-semibold primaryFont'>اتصل بنا</p>
                     </a>
                     <a href='#order' className='hidden lg:block'>
-                        <p className='text-black hover:text-[#51B591] font-semibold'>طلب خدمة</p>
+                        <p className='text-black hover:text-[#51B591] font-semibold primaryFont'>طلب خدمة</p>
                     </a>
                     <a href='#service' className='hidden lg:block'>
-                        <p className='text-black hover:text-[#51B591] font-semibold'>الخدمات</p>
+                        <p className='text-black hover:text-[#51B591] font-semibold primaryFont'>الخدمات</p>
                     </a>
                     <a href='#about' className='hidden lg:block'>
-                        <p className='text-black hover:text-[#51B591] font-semibold'>نبذه عنّا</p>
+                        <p className='text-black hover:text-[#51B591] font-semibold primaryFont'>نبذه عنّا</p>
                     </a>
                     <a href='#home' className='hidden lg:block'>
-                        <Link to='الرئيسية' className='text-black hover:text-[#51B591] font-semibold'>الرئيسية</Link>
+                        <Link to='الرئيسية' className='text-black hover:text-[#51B591] font-semibold primaryFont'>الرئيسية</Link>
                     </a>
                 </div>
 
@@ -62,19 +62,19 @@ const Navber = () => {
             <div className={`absolute z-50 duration-300 border-r mt-[17px] lg:hidden flex flex-col-reverse justify-end items-start gap-6 w-72 min-h-screen bg-white px-4 py-4
             ${open ? 'left-0' : '-left-[300px]'}`}>
                 <a onClick={() => setOpen(false)} href='#contact' className='lg:hidden px-4 cursor-pointer'>
-                    <p className='text-black hover:text-[#51B591] font-semibold'>اتصل بنا</p>
+                    <p className='text-black hover:text-[#51B591] font-semibold primaryFont'>اتصل بنا</p>
                 </a>
                 <a onClick={() => setOpen(false)} href='#order' className='lg:hidden px-4 cursor-pointer'>
-                    <p className='text-black hover:text-[#51B591] font-semibold'>طلب خدمة</p>
+                    <p className='text-black hover:text-[#51B591] font-semibold primaryFont'>طلب خدمة</p>
                 </a>
                 <a onClick={() => setOpen(false)} href='#service' className='lg:hidden px-4 cursor-pointer'>
-                    <p className='text-black hover:text-[#51B591] font-semibold'>الخدمات</p>
+                    <p className='text-black hover:text-[#51B591] font-semibold primaryFont'>الخدمات</p>
                 </a>
                 <a onClick={() => setOpen(false)} href='#about' className='lg:hidden px-4 cursor-pointer'>
-                    <p className='text-black hover:text-[#51B591] font-semibold'>نبذه عنّا</p>
+                    <p className='text-black hover:text-[#51B591] font-semibold primaryFont'>نبذه عنّا</p>
                 </a>
                 <a onClick={() => setOpen(false)} href='#home' className='lg:hidden px-4 cursor-pointer'>
-                    <Link to='/الرئيسية' className='text-black hover:text-[#51B591] font-semibold'>الرئيسية</Link>
+                    <Link to='/الرئيسية' className='text-black hover:text-[#51B591] font-semibold primaryFont'>الرئيسية</Link>
                 </a>
             </div>
         </nav>

@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import whatsup from "./assets/icons/whatsup.png"
 import { Toaster } from 'react-hot-toast';
 
+import "./fonts/ArbFONTS-The-Sans-Plain.otf"
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

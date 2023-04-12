@@ -19,10 +19,10 @@ const Footer = () => {
                     <div className='grid md:grid-cols-2 gap-4 w-full max-w-[1440px] mx-auto'>
                         <div className='flex flex-col items-center md:items-start gap-4 w-full h-full'>
                             <Link target="_blank" to="https://maps.app.goo.gl/HfjnaW6pZPmU5i2N9?g_st=ic" className='w-44 h-16 mx-auto md:ml-0 flex justify-around items-center bg-white hover:bg-gray-200 rounded-2xl'>
-                                <span className='text-primary font-bold text-xl'>الموقع</span>
+                                <span className='text-primary font-bold text-xl primaryFont'>الموقع</span>
                                 <img className='w-6' src={location} alt="" />
                             </Link>
-                            <h1 className='text-xl text-white text-right'>التواصل الاجتماعي</h1>
+                            <h1 className='text-xl text-white text-right primaryFont'>التواصل الاجتماعي</h1>
                             <div className='flex justify-end items-center gap-4'>
                                 <div className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
                                     <img className='w-8 h-8' src={twitter} alt="" />
@@ -37,20 +37,20 @@ const Footer = () => {
                         </div>
 
                         <div className='order-first md:order-none flex flex-col items-center md:items-end gap-6 w-full h-full'>
-                            <h1 className='text-5xl font-bold text-white text-center md:text-right'>تواصل معنّا</h1>
+                            <h1 className='text-5xl font-bold text-white text-center md:text-right primaryFont'>تواصل معنّا</h1>
                             <div className='flex flex-col items-center md:items-end gap-2 w-full h-full text-center md:text-right text-white'>
                                 <Link target="_blank" to="mailto:info@narco.com?body=Please Enter Your Message"
-                                    className='hover:text-orange-200'>info@narco.com: الايميل</Link>
+                                    className='hover:text-orange-200 primaryFont'>info@narco.com: الايميل</Link>
                                 <Link target="_blank" to="https://maps.app.goo.gl/HfjnaW6pZPmU5i2N9?g_st=ic"
-                                    className='hover:text-orange-200'>Musa Ibn Nusair St, Al Olaya
+                                    className='hover:text-orange-200 primaryFont'>Musa Ibn Nusair St, Al Olaya
                                     Riyadh, Saudi Arabia 11432: العنوان</Link>
-                                <Link to="tel:+ 0569088881" className='hover:text-orange-200'>الجوال: 0569088881</Link>
+                                <Link to="tel:+ 0569088881" className='hover:text-orange-200 primaryFont'>الجوال: 0569088881</Link>
                             </div>
                         </div>
                     </div>
 
                     <div className='pt-32 w-full'>
-                        <h1 className='text-center font-bold text-3xl md:text-5xl text-white'>شركة ناركو للموارد البشرية</h1>
+                        <h1 className='text-center font-bold text-3xl md:text-5xl text-white primaryFont'>شركة ناركو للموارد البشرية</h1>
                         <img className='w-24 mx-auto mr-0' src={img1} alt="" />
                     </div>
                 </div>
