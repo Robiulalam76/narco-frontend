@@ -9,7 +9,7 @@ const BigButton = () => {
         <Link data-aos="zoom-out-down"
             data-aos-duration="1000"
             data-aos-easing="ease-in-back"
-            target="_blank" to="https://drive.google.com/file/d/1x_p8CmHgoBtKfcMPEpjeXtUfgIgkZpzZ/view?usp=sharing"
+            target="_blank" to="https://www.ahmadalanazi.com/narco/profile.pdf"
 
             className='h-96 md:h-[600px] w-full grid md:grid-cols-2 items-center gap-4 p-6 md:p-20 rounded-3xl mt-40 bg-primary hover:bg-darkPrimary duration-500 cursor-pointer overflow-hidden'>
             <div className='w-full h-full flex justify-center items-center'>
