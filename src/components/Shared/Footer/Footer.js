@@ -30,7 +30,7 @@ const Footer = () => {
                                 <div className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
                                     <img className='w-8 h-8' src={instagram} alt="" />
                                 </div>
-                                <a target="_blank" href='https://wa.me/9660569088881' className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
+                                <a target="_blank" href='https://wa.me/966599991886' className='flex justify-center items-center w-14 h-14 bg-secondary hover:bg-primary duration-300 cursor-pointer rounded-full p-1'>
                                     <img className='w-8 h-8' src={whatsup} alt="" />
                                 </a>
                             </div>
@@ -39,12 +39,12 @@ const Footer = () => {
                         <div className='order-first md:order-none flex flex-col items-center md:items-end gap-6 w-full h-full'>
                             <h1 className='text-5xl font-bold text-white text-center md:text-right primaryFont'>تواصل معنّا</h1>
                             <div className='flex flex-col items-center md:items-end gap-2 w-full h-full text-center md:text-right text-white'>
-                                <Link target="_blank" to="mailto:info@narco.com?body=Please Enter Your Message"
-                                    className='hover:text-orange-200 primaryFont'>info@narco.com: الايميل</Link>
+                                <Link target="_blank" to="mailto:info@narcohr.com?body=Please Enter Your Message"
+                                    className='hover:text-orange-200 primaryFont'>info@narcohr.com: الايميل</Link>
                                 <Link target="_blank" to="https://maps.app.goo.gl/HfjnaW6pZPmU5i2N9?g_st=ic"
                                     className='hover:text-orange-200 primaryFont'>Musa Ibn Nusair St, Al Olaya
                                     Riyadh, Saudi Arabia 11432: العنوان</Link>
-                                <Link to="tel:+ 0569088881" className='hover:text-orange-200 primaryFont'>الجوال: 0569088881</Link>
+                                <Link to="tel:+ +966599991886" className='hover:text-orange-200 primaryFont'>الجوال: +966599991886</Link>
                             </div>
                         </div>
                     </div>
